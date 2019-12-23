@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Env&iacute;o de Notificaciones</h2>
+
+<form action="/form" method="post">
+    <div class="form-group row">
+        <div class="col-md-2">
+            <label class="label-control" >Body:</label>
+        </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control input-sm" id="bodyNotification" name="bodyNotification" value="#{bodyNotification}" placeholder="Ingrese el body de la notificacion" />
+        </div>
+    </div>
+        <div class="form-group row">
+            <div class="col-md-2">
+                <label class="label-control" >Titulo:</label>
+            </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control input-sm" id="titleNotification" name="titleNotification" value="#{titleNotification}" placeholder="Ingrese el body de la notificacion" />
+            </div>
+    </div>
+        <div class="form-group row">
+            <div class="col-md-2">
+                <label class="label-control" >Icono:</label>
+            </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control input-sm" id="iconNotification" name="iconNotification" value="#{iconNotification}" placeholder="Ingrese el body de la notificacion" />
+            </div>
+    </div>
+        <div class="form-group row">
+            <div class="col-md-2">
+                <label class="label-control" >Imagen:</label>
+            </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control input-sm" id="imageNotification" name="imageNotification" value="#{imageNotification}" placeholder="Ingrese el body de la notificacion" />
+            </div>
+    </div>
+    <div class="form-group row text-center">
+    <div class="col-md-6">
+        <div class="col-md-2" style="margin:auto">
+            <button type="submit" class="btn btn-warning btn-sm btn-block" name="btnSendPushNotification">Enviar</button>
+        </div>
+    </div>
+    </div>
+
+
+
+</form>
+</div>
+
+</body>
+</html>
+
+
+
