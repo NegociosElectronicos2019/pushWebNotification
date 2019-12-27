@@ -8,7 +8,7 @@ var router = express.Router();
 const ET_Client = require('sfmc-fuelsdk-node');
 const clientId = '6pc5gwpvanownyydmztsk9vk';
 const clientSecret = 'XqHSQZCdqvSVKV9p6wzdr6tH';
-const stack = 789;
+const stack = 'S1';
 const client = new ET_Client(clientId, clientSecret, stack);
 
 
@@ -55,7 +55,7 @@ router.post('/form',function(req,res,next){
       }
     }
   });
- /* Request.post({
+  Request.post({
     "headers": { "content-type": "application/json",
                   "X-Token": "771f8f4c-549f-40e3-ac6d-64e8be54d97a" },
     "url": "https://api.pushpushgo.com/project/5dca2b7a8d7dda6c7e30a6c5/send/push",
@@ -77,7 +77,7 @@ router.post('/form',function(req,res,next){
         return console.dir(error);
     }
     console.dir(JSON.parse(body));
-});*/
+});
 res.render('form', {});
 
 });
